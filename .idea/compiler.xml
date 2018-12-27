@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="dept-microservice-8001" />
+        <module name="dept-microservice-8005" />
+        <module name="dept-microservice-api" />
+        <module name="dept-portal-8002" />
+        <module name="eureka-server-7001" />
+        <module name="eureka-server-7002" />
+      </profile>
+    </annotationProcessing>
+  </component>
+</project>

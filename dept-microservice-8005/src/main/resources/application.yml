@@ -1,0 +1,54 @@
+server:
+  port: 8005
+
+mybatis:
+  # mybatis配置文件所在路径
+  config-location: classpath:mybatis/mybatisConfig.xml
+  # 所有Entity别名类所在包
+  type-aliases-package: dept-springcloud-parent.entity
+  # mapper映射文件
+  mapper-locations:
+  - classpath:com.dept.mapper/**/*.xml
+
+spring:
+   application:
+   # 微服务整合的命名 ，对外暴露的名字，非常重要(不同端口的部门微服务模块若需要实现Ribbon负载均衡，这个名称需要相同)
+    name: dept-com.dept.service
+   datasource:
+   # 当前数据源操作类型
+    type: com.alibaba.druid.pool.DruidDataSource
+    # mysql驱动包
+    driver-class-name: org.gjt.mm.mysql.Driver
+    # 数据库名称
+    url: jdbc:mysql://localhost:3306/springclouddb02
+    username: root
+    password: 123456
+    dbcp2:
+    # 数据库连接池的最小维持连接数
+      min-idle: 5
+       # 初始化连接数
+      initial-size: 5
+       # 最大连接数
+      max-total: 5
+      # 等待连接获取的最大超时时间
+      max-wait-millis: 200
+
+
+#客户端注册进eureka服务列表内
+eureka:
+  client: #eureka集群地址
+      service-url:
+        defaultZone: http://eureka7001.com:7001/eureka,http://eureka7002.com:7002/eureka
+  #设置注册进入Eruka的实例名称
+  instance:
+      instance-id: ${spring.application.name}---8005
+      #访问路径可以显示IP地址
+      prefer-ip-address: true
+
+
+info:
+  app.name: dept-springcloud-parent
+  instance-id: ${spring.application.name}---8005
+  company.name: https://github.com/
+  build.artifactId: $project.artifactId$
+  build.version:  $project.version$

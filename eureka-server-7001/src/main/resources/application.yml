@@ -1,0 +1,18 @@
+server:
+  port: 7001
+
+eureka:
+  #eureka服务端的实例名称 hosts文件中配置了127.0.0.1 的端口映射
+  instance:
+    hostname: eureka7001.com
+  client:
+    #false表示不向注册中心注册自己。
+    register-with-eureka: false
+    #false表示自己端就是注册中心，我的职责就是维护服务实例，并不需要去检索服务
+    fetch-registry: false
+    service-url:
+      #设置与Eureka Server交互的地址查询服务和注册服务都需要依赖这个地址（单机）。
+      #单机
+      #defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
+      #加入7002服务中心的地址 实现双集群模式
+      defaultZone: http://eureka7002.com:7002/eureka
