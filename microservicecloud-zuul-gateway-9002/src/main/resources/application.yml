@@ -1,0 +1,33 @@
+server:
+   port: 9002
+
+spring:
+  application:
+    name: microservicecloud-zuul-gateway
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://eureka7001.com:7001/eureka/,http://eureka7002.com:7002/eureka/
+
+
+
+
+zuul:
+  ignored-services: "*"     #dept-com.dept.service      # 将原有路由关闭
+  prefix: /srtech          # 设置zuul的统一公共前缀
+  #配置路由访问规则
+  routes:
+
+    deptManage.serviceId:  dept-com.dept.service
+    deptManage.path: /deptManage/**
+
+instance:
+  instance-id: zuul-gateway-9002
+  prefer-ip-address: true
+
+info:
+    app.name: ${spring.application.name}
+    company.name: www.guthub.com
+    build.artifactId: $project.artifactId$
+    build.version: $project.version$

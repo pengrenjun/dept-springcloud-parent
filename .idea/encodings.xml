@@ -5,8 +5,14 @@
     <file url="file://$PROJECT_DIR$/dept-microservice-8001" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/dept-microservice-8005" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/dept-microservice-api" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/dept-microservice-configclient-8019" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/dept-microservice-hyx-8010" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/dept-portal-8002" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/dept-portal-8009" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/eureka-server-7001" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/eureka-server-7002" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/microservicecloud-config-7009" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/microservicecloud-hystrix-dashboard" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/microservicecloud-zuul-gateway-9002" charset="UTF-8" />
   </component>
 </project>
