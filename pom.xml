@@ -14,6 +14,12 @@
       <module>eureka-server-7001</module>
     <module>eureka-server-7002</module>
       <module>dept-microservice-8005</module>
+      <module>dept-portal-8009</module>
+      <module>dept-microservice-hyx-8010</module>
+      <module>microservicecloud-hystrix-dashboard</module>
+      <module>microservicecloud-zuul-gateway-9002</module>
+      <module>microservicecloud-config-7009</module>
+      <module>dept-microservice-configclient-8019</module>
   </modules>
 
 

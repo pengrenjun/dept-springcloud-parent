@@ -1,0 +1,8 @@
+spring:
+  cloud:
+    config:
+      name: dept-microservice-configclient-8019 # 需要从github上读取的资源名称,注意没有yml后缀名
+      profile: dev  # 本次访问的配置项
+      label: master
+      uri: http://config7009.com:7009
+      # 本微服务启动后,先去找7009号服务,通过配置中心SpringCloudConfig获取GitHub的服务地址,加载相应的配置文件

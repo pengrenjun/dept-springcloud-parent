@@ -19,7 +19,7 @@ public class DeptMircServiceUrl {
 
     public static final String DEPT_GETDEPT_LIST=REST_DEPT_PREURL+"/dept/list";
 
-    public static String Dept_Getdept_ById_URL(String id ){
+    public static String  Dept_Getdept_ById_URL(String id ){
         return  REST_DEPT_PREURL+"/dept/get/"+id;
     }
 

@@ -1,0 +1,11 @@
+server:
+  port: 7009
+
+spring:
+  application:
+    name: dept-springcloud-parent
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/pengrenjun/dept-springcloud-parent.git #git@github.com/pengrenjun/dept-springcloud-parent.git # GitHub上面的git仓库名字

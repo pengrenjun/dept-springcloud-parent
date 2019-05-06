@@ -9,7 +9,7 @@ import org.springframework.web.client.RestTemplate;
 import java.util.List;
 
 /**
- * @Description: 部门管理服务类 调用部门微服务接口进行信息的处理
+ * @Description: 部门管理服务类 调用部门微服务接口（Ribbon template方式）进行信息的处理
  * @Author：pengrj
  * @Date : 2018/12/24 0024 20:59
  * @version:1.0

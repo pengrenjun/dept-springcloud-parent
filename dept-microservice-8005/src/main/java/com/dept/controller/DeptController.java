@@ -6,6 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
+import java.util.concurrent.TimeUnit;
 
 /**
  * @Description:  部门服务对外接口
@@ -36,6 +37,7 @@ public class DeptController {
     @RequestMapping(value = "/dept/list", method = RequestMethod.GET)
     public List<Dept> list()
     {
+
         return deptService.list();
     }
 
