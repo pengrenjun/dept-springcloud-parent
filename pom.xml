@@ -20,6 +20,7 @@
       <module>microservicecloud-zuul-gateway-9002</module>
       <module>microservicecloud-config-7009</module>
       <module>dept-microservice-configclient-8019</module>
+    <module>ali-gts-test</module>
   </modules>
 
 

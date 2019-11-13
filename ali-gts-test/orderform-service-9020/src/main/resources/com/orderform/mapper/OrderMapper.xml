@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.orderform.mapper.OrderMapper">
+
+   <select id="list" resultType="com.orderform.entity.OrderForm">
+		select order_no,order_name,product_no,number from orderform;
+	</select>
+
+    <insert id="order" parameterType="com.orderform.entity.OrderForm">
+		INSERT INTO orderform(order_name,product_no,number) VALUES(#{order_name},#{product_no},#{number});
+	</insert>
+
+</mapper>
+

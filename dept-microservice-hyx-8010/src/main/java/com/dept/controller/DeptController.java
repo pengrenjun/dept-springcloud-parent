@@ -48,7 +48,7 @@ public class DeptController {
 
     /*熔断处理 返回处理的数据*/
     private Dept  deptGetHystrixCommand (@PathVariable("id") Long id){
-        return new Dept("部门ID:"+id,"dbsource not exit").setDeptno(id);
+        return new Dept("asd","adcasd");
     }
 
 

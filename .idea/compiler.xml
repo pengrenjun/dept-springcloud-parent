@@ -6,19 +6,28 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="dept-microservice-8001" />
-        <module name="dept-microservice-8005" />
+        <module name="storeroom-service-9021" />
         <module name="dept-microservice-api" />
-        <module name="dept-microservice-configclient-8019" />
         <module name="dept-microservice-hyx-8010" />
-        <module name="dept-portal-8002" />
-        <module name="dept-portal-8009" />
-        <module name="eureka-server-7001" />
-        <module name="eureka-server-7002" />
-        <module name="microservicecloud-config-7009" />
-        <module name="microservicecloud-hystrix-dashboard" />
         <module name="microservicecloud-zuul-gateway-9002" />
+        <module name="microservicecloud-hystrix-dashboard" />
+        <module name="microservicecloud-config-7009" />
+        <module name="dept-microservice-8005" />
+        <module name="dept-microservice-8001" />
+        <module name="orderform-service-9020" />
+        <module name="dept-portal-8009" />
+        <module name="dept-portal-8002" />
+        <module name="customer-portal-9022" />
+        <module name="dept-microservice-configclient-8019" />
+        <module name="eureka-server-7002" />
+        <module name="eureka-server-7001" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="customer-client-9022" target="1.7" />
+      <module name="customer-client-gtsTest9022" target="1.7" />
+      <module name="orderformservicegtsTest9020" target="1.7" />
+      <module name="storeroom-service-gtsTest-9021" target="1.7" />
+    </bytecodeTargetLevel>
   </component>
 </project>
